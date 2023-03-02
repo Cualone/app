@@ -15,6 +15,12 @@ public class app {
             String com = sc.nextLine().trim();  //.trim==좌우공백제거
             if (com.equals("종료")) {
                 break;
+            } else if (com.equals("등록")) {
+                System.out.print("명언 : ");
+                String content = sc.nextLine().trim();
+                System.out.print("작가 : ");
+                String name = sc.nextLine().trim();
+
             }
         }
     }
