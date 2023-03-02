@@ -20,6 +20,7 @@ public class app {
                 String content = sc.nextLine().trim();
                 System.out.print("작가 : ");
                 String name = sc.nextLine().trim();
+                System.out.println("1번명언이 등록되었습니다.");
 
             }
         }
