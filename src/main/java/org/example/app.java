@@ -1,6 +1,7 @@
 package org.example;
 import java.util.Scanner;
 public class app {
+    long lastWiseSayingId = 1;
     private final Scanner sc;
     public app(Scanner sc) {
         this.sc = sc;
@@ -9,8 +10,8 @@ public class app {
 
     public void run() {
         System.out.println("==명언 앱==");
-
         while (true) {
+
             System.out.print("명령) ");
             String com = sc.nextLine().trim();  //.trim==좌우공백제거
             if (com.equals("종료")) {
@@ -20,8 +21,9 @@ public class app {
                 String content = sc.nextLine().trim();
                 System.out.print("작가 : ");
                 String name = sc.nextLine().trim();
-                System.out.println("1번명언이 등록되었습니다.");
 
+                System.out.printf("%d번 명언이 등록되었습니다.\n", lastWiseSayingId);
+                lastWiseSayingId++;
             }
         }
     }
